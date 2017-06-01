@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Saved Foods</title>
+    <!-- Load any supplemental Javascript libraries here -->
+    <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="saved.css"> -->
+    <link rel="stylesheet" href="layout.css">
+
+    <!-- Use mobile-aware viewport -->
+    <script src="saved.js"></script>
+    <meta name="viewport" content="user-scalable=0 width=device-width, initial-scale=1 maximum-scale=1.0"/>
+  </head>
+  <body>
+      <div class="row" id="banner-header">
+          <div class="col-xs-4 header">
+          <button type="button" id="add-item" class="header-button current" >
+               Foods</button>
+       </div>
+
+       <div class="col-xs-4 header">
+       <button type="button" id="save" class="header-button" >
+          Calculate
+        </button>
+      </div>
+      <div class="col-xs-4 header">
+        <button type="button" id="history" class="header-button" >
+            <!-- <span class="glyphicon glyphicon-time">   </span> -->
+             History </button>
+    </div>
+
+    <div class='row well' style="height: 85vh">
+      <ul class='list-group'>
+      </ul>
+    </div>
+
+    </div>
+
+
+     <!--
+    <div class="footer">
+    <div id='addFood'>
+      <h3 class='center'>Add to Meal</h3>
+    </div>
+</div> -->
+  </body>
+</html>

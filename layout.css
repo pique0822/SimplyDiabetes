@@ -1,0 +1,416 @@
+/*body{
+
+}*/
+.toggles{
+    padding-left:10px;
+}
+
+/*body {
+    font: 20pt Helvetica;
+}*/
+#content {
+    padding-top: 20px;
+}
+
+
+
+
+
+#container{
+  /*padding-left: 5px;
+  padding-right: 10px;*/
+}
+
+
+/*.button-container{
+  width:50%;
+  left:50%;
+}*/
+/*button .part-width{
+  width:50%;
+}*/
+/*#add-item{
+  width: 30%;
+  height: 100%;
+  padding-left: 2% !important;
+}*/
+
+#banner{
+    background: white;
+  color: black;
+  height:3.7%;
+  font-size: 18px;
+  text-align:center;
+
+}
+
+
+.header{
+    /*width:100%;*/
+  /*text-align:center;*/
+  height: 10vh;
+  margin-bottom: 10px;
+  background: 	#f7f7f7;
+  border-color:	#f7f7f7;
+}
+
+.header-button{
+    width:100%;
+    color:black;
+    height: 10vh;
+    font-size: 15pt;
+    /*background: #3498db;*/
+}
+
+.small-button{
+    width:100%;
+    color:black;
+    height: 4vh;
+    font-size: 10pt;
+    background-color: #27ae60;
+}
+
+.current{
+/*text-decoration: underline;*/
+/*padding:0px;
+width:100%;*/
+border-color:	#f7f7f7;
+border-bottom-color:#27ae60;
+/*border-top-color:white;
+border-left-color:white;
+border-right-color:white;*/
+color: black;
+
+background-color: 	#f7f7f7;
+}
+/*.header-button:active{
+  background-color: #7f8c8d;
+  color: purple;
+}
+
+.header-button:focus{
+  outline: none;
+}*/
+
+.search-container{
+  text-align:center;
+  font-size:3em;
+}
+
+.search-bar{
+
+}
+
+.ui-menu li{
+  list-style:none;
+}
+.ui-menu .ui-menu-item a{
+    color: #96f226;
+    border-radius: 0px;
+    border: 1px solid #454545;
+}
+
+ .ui-autocomplete {
+    cursor:pointer;
+    height:120px;
+    overflow-y:scroll;
+    font-size: 1.5em!important;
+  }
+
+  #banner-header{
+      position:absolute;
+      top:0px;
+  }
+
+  #add-to-meal{
+        position:absolute;
+        bottom:0px;
+        left:0px;
+          width: 100%;
+          height: 9vh;
+          /*height: 56px;*/
+          padding-left: 2% !important;
+          background: #3498db;
+          margin:0;
+          font-size:3vh;
+  }
+  #addFood {
+      background-color: #2ecc71;
+      width: 100%;
+      /*position: absolute;*/
+      /*bottom: 0;*/
+      /*border-radius: 1vh;*/
+      height: 9vh;
+      text-align: center;
+  }
+
+#calculate {
+  position:absolute;
+  bottom:0px;
+  right:0px;
+    width: 50%;
+    height: 9vh;
+    /*height: 56px;*/
+    padding-left: 2% !important;
+    background: #2ecc71;
+    margin:0;
+    /*font-size:3vh;*/
+}
+#add-to-foods{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+      width: 50%;
+      height: 9vh;
+      /*height: 56px;*/
+      padding-left: 2% !important;
+      background: #3498db;
+      margin:0;
+      font-size:3vh;
+}
+.footer {
+  position: fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  display:block;
+  /*clear:both;*/
+  /*padding-top:20px;*/
+}
+
+.save-footer{
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    /*margin-top: -100px; /* negative value of footer height */*/
+    height: 100px;
+    display:block;
+    /*clear:both;*/
+    /*padding-top:20px;*/
+  }
+
+#saved-foods{
+    margin: 0px;
+}
+#saved-list{
+
+}
+.nav{
+    max-height: 400px;
+    overflow-y:scroll;
+    margin-bottom:10px;
+}
+
+/*button .full-width{
+  width:100%;
+  display:block; //only if you're having issues
+}*/
+/*.top-buffer { margin-top:20px; }*/
+
+#total{
+  size:18pt;
+  margin-top:40px;
+  float:right;
+  padding-right: 10px;
+
+}
+
+.well{
+  padding-top: 9px;
+  background: white !important;
+  /*margin-bottom:10px !important;*/
+  height:64vh;
+  display:block;
+  overflow-y:scroll;
+}
+
+#save-well{
+      background: white !important;
+      /*margin-bottom:10px !important;*/
+      height:100%;
+      display:block;
+      overflow-y:scroll;
+}
+.active{
+  background-color:#3498db;
+  color:white;
+}
+
+
+.food {
+  display: inline-block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  /*font-weight: bold;*/
+}
+
+.h1{
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main-button {
+  color: black;
+  font-size: 3.5vh;
+  padding: .5vh;
+  font-weight: normal;
+}
+
+/*.header-button{
+  height:10vh;
+  width: 30vw;
+
+  letter-spacing: .2vw;
+  background-color: #ecf0f1;
+}*/
+
+
+.input-label{
+  text-align: right;
+}
+
+.list-group{
+  width:98vw!important;
+  margin-left:3.5vw!important;
+}
+
+
+#search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+    width:86%;
+    margin-left: 7%;
+}
+
+#search-input input{
+    border: 0;
+    box-shadow: none;
+    font-size:0.5em;
+    height:2em;
+}
+
+#search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+
+.portion-container{
+  text-align:center;
+  height:4em;
+  float:right;
+  display:inline-block;
+}
+
+.gram-container{
+  text-align:center;
+  height:4em;
+  float:right;
+  display:inline-block;
+}
+.gram-container p{
+  padding-top:0.4em;
+}
+
+label > input{ /* 0.4emE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+  font-size:2em;
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+  height:1.5em;
+  display:inline-block;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+.gram{
+  font-size:2.5em;
+}
+
+.close-list{
+  float: left!important;
+  font-size: 2em!important;
+  margin-left: -8px;
+  margin-top:-6px;
+}
+/*Used for graphing section*/
+.historyBody {
+  overflow-x: hidden;
+}
+.graph{
+  margin-left: 5vw;
+  width:95vw;
+  height:80vh;
+  text-align:center;
+}
+
+.toggles{
+  margin-left: 5vw;
+}
+.toggle-button{
+  width:33vw;
+  height: 8vh;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+#breakfast-tog-button{
+  background-color: #e74c3c;
+}
+
+#lunch-tog-button{
+  background-color: #3498db;
+}
+
+#dinner-tog-button{
+  background-color: #2ecc71;
+}
+
+.tog-active{
+  outline-color: black;
+  outline-style: solid;
+  outline-width: 1%;
+}
+
+
+#clear_all {
+  position: relative;
+  left: 7vw;
+  margin-bottom: 9px;
+  padding: 0;
+  font-size: 1em;
+  color: #3498db;
+  text-decoration: underline #3498db;
+}

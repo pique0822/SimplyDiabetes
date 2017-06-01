@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<title>Add Ingredients</title>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="search_layout.css">
+<script src="lib/jquery-3.1.1.js"></script>
+<script src="search.js"></script>
+<!-- Remove this script to disable logging -->
+<!-- <script src="logging.js"></script> -->
+</head>
+<body>
+	<div class="row">
+	<div class = "col-sm-2 backContainer">
+		<button class="header-button btn btn-lg" type="submit" id="backBtn">
+			<i class="glyphicon glyphicon-arrow-left" ></i>
+		</button>
+		<button class="header-button btn btn-lg" type="submit" id="savedBtn">
+			<span class="glyphicon glyphicon-plus"></span>
+			Add Saved
+		</button>
+	</div>
+	<div class="col-md-2 pull-right basket-container">
+		<img id="basket-icon" src="icons/basket.png" >
+	</div>
+<!-- Basket Modal -->
+<!-- The Modal -->
+<!-- <<<<<<< HEAD
+	<div id="basket-modal" class="col-sm-2 basketModal"> -->
+	  <!-- Modal content -->
+	<!-- <div id="basket-modal" class="col-sm-2 basketModal">
+>>>>>>> 12157ed61340598425ffb8c61ea7b3e539624ac3
+	  <div class="basketContent" id="basket-content">
+	  	<div class="modalHeader">
+	    	<span class="close" id="basket-close">&times;</span>
+	    	<h1>Basket</h1>
+	    </div>
+	    <div class="row basketResults" id="basket-results"></div>
+	    <div class="row modalFooter">
+	    	<div class="col-md-4 pull-right modalFooter">
+	    		<button class="btn btn-lg" type="submit" id="addToMealBtn">Add Items to Meal</button>
+	    	</div>
+	    </div>
+	  </div>
+<<<<<<< HEAD
+=======
+======= -->
+<div id="basket-modal" class="col-sm-2 basketModal">
+  <!-- Modal content -->
+  <div class="basketContent" id="basket-content">
+  	<div class="modalHeader">
+    	<span class="close" id="basket-close">&times;</span>
+    	<h1>Basket</h1>
+    </div>
+    <div class="row basketResults">
+		<ul class="nav basketLists" id="basket-results">
+		</ul>
+		</div>
+    <div class="row modalFooter">
+    	<div class="col-md-4 pull-right modalFooter">
+    		<button class="btn btn-lg" type="submit" id="addToMealBtn">Add Items to Meal</button>
+    	</div>
+    </div>
+  </div>
+<!-- >>>>>>> b2bbd736d141aef149f32624acff22486d78762f -->
+<!-- >>>>>>> 12157ed61340598425ffb8c61ea7b3e539624ac3 -->
+
+	</div>
+</div>
+
+
+<!-- Results -->
+<div class="row">
+<div class="col-sm-12 centered mainCol">
+		<input type="text" class="searchBar" id="search" placeholder="Search for ingredients..."></input>
+		<button class="btn btn-lg" type="submit" id="searchSubmit"><i class="glyphicon glyphicon-search"></i></button>
+	</div>
+	<div class="row searchResults" >
+		<ul class="nav" id="search-results">
+		</ul>
+  </div>
+</div>
+<div class="row">
+<div class = "footer"> <button class="btn btn-lg" type="submit" id="nextBtn">Next</button></div>
+</div>
+</body>
+</html>

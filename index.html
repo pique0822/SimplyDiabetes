@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title>Sugar OnTop</title>
+   <!--  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" /> -->
+
+    <link rel="stylesheet" href="layout.css">
+    <!-- Latest compiled and minified CSS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+    <link href="https://jquery-ui-bootstrap.github.io/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.3.custom.css" rel="stylesheet"/>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+
+    <meta name="viewport" content="user-scalable=0 width=device-width, initial-scale=1 maximum-scale=1.0"/>
+
+    <!-- popup style and js -->
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+
+</head>
+
+<body>
+
+<div class="row" id="banner-header">
+    <div class="col-xs-4 header" style="padding: 0px;">
+    <button type="button" id="add-item" class="header-button" >
+<!-- <span class="glyphicon glyphicon-bookmark"></span> -->
+         Foods</button>
+ </div>
+ <div class="col-xs-4 header" style="padding: 0px;">
+ <button type="button" id="save" class="header-button current" >
+    Calculate
+  </button>
+</div>
+
+  <div class="col-xs-4 header" style="padding: 0px;">
+    <button type="button" id="history" class="header-button" >
+        <!-- <span class="glyphicon glyphicon-time">   </span>  -->
+        History </button>
+</div>
+
+
+
+    <div class = "row search-container">
+      <div id="search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" id="search" placeholder="Search for food ingredients..." />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" id="addFoodBtn" type="button">
+                            <i class="glyphicon glyphicon-plus"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+    </div>
+
+     <div class="well row" style="padding-top: 9px;">
+       <!-- <p id='clear_all'>Clear All</p> -->
+       <ul class="list-group">
+       </ul>
+     </div><!--/.well -->
+   </div><!--/span-->
+
+
+
+    <div class="footer">
+    <div class='h1' id="total">Total: 0g</div>
+      <button type="button" id="calculate" class="btn btn-lg" >
+          <div class="main-button">
+          Calculate
+      </div>
+  </button>
+          <button type="button" id="add-to-foods" class="btn btn-lg" ><div class="main-button">Add To Foods</div></button>
+     </div>
+
+      <!--popup background-->
+      <div class='popup-background invisible'>
+      </div>
+      <!--popup for carbs-->
+      <div class='center-div popup carb-popup invisible'>
+        <div class='row calculate-popup-title'>
+          <!-- <h1><span id='cancel' aria-hidden="true">&times;</span><h1> -->
+          <div id='calculate-close'>
+            <h1>&times;</h1>
+          </div>
+          <div id='calculate-popup-title-text'>
+            <h1>Calculate</h1>
+          </div>
+        </div>
+        <div class='calculate-popup-content'>
+          <div class='row input-row'>
+            <h2 id='carb-intake'>0g of Carbs</h2>
+          </div>
+          <div class='row input-row form-group form-inline'>
+              <input class='input-num' id='icr' type="number" placeholder='Carb Ratio    ' />
+              <label class='input-label'>g/unit</label>
+          </div>
+          <div class='row input-row form-group form-inline'>
+              <input class='input-num' id='bloodSugar' type="number" placeholder='Blood Sugar  ' />
+              <label class='input-label'>mM/L</label>
+          </div>
+          <div class='row input-row'>
+            <label class = 'col-xs-12 insulin center invisible' id='insulin'>Inject 0 units</label>
+          </div>
+        </div>
+        <div class='row calculate-popup-footer'>
+          <div class="row input-row">
+               <button type='button' id='save-to-history' class='btn'>Save to History</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!--popup for saving food-->
+      <div class='center-div popup save-popup invisible'>
+        <div class='row saved-popup-title'>
+          <!-- <h1><span id='cancel' aria-hidden="true">&times;</span><h1> -->
+          <div id='saved-close'>
+            <h1>&times;</h1>
+          </div>
+          <div id='saved-popup-title-text'>
+            <h1>Add Food</h1>
+          </div>
+        </div>
+        <div class='saved-popup-content'>
+          <br>
+          <div class='row input-row form-group form-inline'>
+            <br>
+            <br>
+            <br>
+            <label class='input-label'>Food Name:</label>
+            <input class='input-text' id='save-food-name' type="textarea" maxlength=16 placeholder='eg Chicken'/>
+          </div>
+        </div>
+        <div class='row saved-popup-footer'>
+          <div class="row input-row">
+               <button type='button' id='save-to-foods' class='btn'>Add to Foods</button>
+          </div>
+        </div>
+      </div>
+
+
+
+</body>
+</html>

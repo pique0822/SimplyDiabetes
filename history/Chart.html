@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../layout.css">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ -->
+
+ <script
+   src="https://code.jquery.com/jquery-3.2.1.min.js"
+   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+   crossorigin="anonymous"></script>
+
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+ <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+ <!-- Optional theme -->
+ <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+ <link href="https://jquery-ui-bootstrap.github.io/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.3.custom.css" rel="stylesheet"/>
+
+ <!-- Latest compiled and minified JavaScript -->
+ <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="user-scalable=0 width=device-width, initial-scale=1 maximum-scale=1.0"/>
+
+  <!--Flot Chart graphing-->
+  <script src=
+  "flot/jquery.flot.js"></script>
+  <script src="flot/jquery.flot.time.js"></script>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/css/mdb.min.css" />
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/js/mdb.min.js"></script> -->
+
+  <script src='Scripts/historyCanvas.js'></script>
+
+</head>
+<body class='historyBody'>
+
+  <!-- <div class="row top-buffer">
+    <div class="col-sm-4" id="header">
+      <button type="button" id="back" class="btn btn-lg header-button" >
+        <i class="glyphicon glyphicon-arrow-left" ></i>
+      </button>
+    </div>
+  </div></span-->
+  <div class="row" id=banner-header style="position:relative">
+      <div class="col-xs-4 header">
+      <button type="button" id="add-item" class="header-button" >
+ <!-- <span class="glyphicon glyphicon-bookmark"></span> -->
+           Foods</button>
+   </div>
+   <div class="col-xs-4 header">
+   <button type="button" id="save" class="header-button" >
+      Calculate
+    </button>
+  </div>
+
+
+    <div class="col-xs-4 header">
+      <button type="button" id="history" class="header-button current" >
+          <!-- <span class="glyphicon glyphicon-time">   </span>  -->
+          History </button>
+  </div>
+
+</div>
+
+  <div class ="row">
+      <div class='graph'>
+        <div class='title'><h2 style='margin-top: 0px; margin-bottom: 0px;'>Blood Sugar<h2></div>
+        <div id="flot-placeholder" style="height:90%;"></div>
+      </div>
+
+  </div>
+  <div class='row toggles'>
+     <button type='button' id='breakfast-tog-button' class='toggle-button tog-active'>Breakfast</button>
+    <button type='button' id='lunch-tog-button' class='toggle-button tog-active'>Lunch</button>
+    <button type='button' id='dinner-tog-button' class='toggle-button tog-active'>Dinner</button>
+</div>
+</body>
+</html>

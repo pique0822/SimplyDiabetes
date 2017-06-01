@@ -1,0 +1,119 @@
+<!Doctype HTML>
+<html>
+  <head>
+    <title>Pop up</title>
+
+    <!-- Load any supplemental Javascript libraries here -->
+    <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="popup.css">
+
+    <!-- Use mobile-aware viewport -->
+    <meta name="viewport" content=
+      "width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script>
+      $(document).on('click','#popup-button',function(){
+        console.log('click');
+        $('.popup-background').animate({
+          opacity: .8
+        }, 250,function(){
+          console.log('done');
+        });
+        $('.popup').animate({
+          opacity: 1
+        }, 250);
+
+        add();
+
+      });
+
+      $(document).on('click','#done',function(){
+        console.log('click');
+        $('.popup-background').animate({
+          opacity: .2
+        }, 250,function(){
+          console.log('done');
+        });
+        $('.popup').animate({
+          opacity: .2
+        }, 250,function(){
+          remove();
+        });
+
+      });
+
+      $(document).on('click','#cancel',function(){
+        console.log('click');
+        $('.popup-background').animate({
+          opacity: 0
+        }, 250,function(){
+          console.log('done');
+        });
+        $('.popup').animate({
+          opacity: 0
+        }, 250,function(){
+          remove();
+        });
+
+      });
+
+      var remove = function(){
+        $('.popup-background').addClass('invisible');
+        $('.popup-background').removeClass('visible');
+        $('.popup').addClass('invisible');
+        $('.popup').removeClass('visible');
+      }
+
+      var add = function(){
+        $('.popup-background').removeClass('invisible');
+        $('.popup-background').addClass('visible');
+        $('.popup').removeClass('invisible');
+        $('.popup').addClass('visible');
+      }
+    </script>
+  </head>
+  <body>
+    <div class="Purple">
+    </div>
+    <br>
+    <button type='button' class='btn' id='popup-button'>popup</button>
+    <div class='popup-background invisible'>
+    </div>
+    <div class='center popup invisible'>
+      <div class='form-group row'>
+        <label class='col-xs-6 col-form-label'>Total Carb Intake:</label>
+        <div class='col-xs-4'>
+          <input class='form-control' type='number' name='total-carbs' value=50>
+        </div>
+      </div>
+      <div class='form-group row'>
+        <label class='col-xs-6 col-form-label'>Insulin-Carb Ratio:</label>
+        <div class='col-xs-4'>
+          <input class='form-control' type='number' name='total-carbs' value=50>
+        </div>
+      </div>
+      <div class='form-group row'>
+        <label class='col-xs-6 col-form-label'>Blood Sugar:</label>
+        <div class='col-xs-4'>
+          <input class='form-control' type='number' name='total-carbs' value=50>
+        </div>
+      </div>
+      <br>
+      <div class="btn-toolbar justify-content-between">
+        <div class="col-xs-3">
+           <button type='button' id='cancel' class='btn'>Cancel</button>
+        </div>
+        <div class="col-xs-3 col-xs-offset-4">
+           <button type='button' id='done' class='btn'>Done</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

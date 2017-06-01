@@ -1,0 +1,87 @@
+/*#banner-header{
+    position:absolute;
+    top:0px;
+}*/
+.header{
+    /*width:100%;*/
+  /*text-align:center;*/
+  height: 10vh;
+  /*margin-bottom: 10px;*/
+  background: grey;
+}
+.header-button{
+    width:100%;
+    color:white;
+    height: 10vh;
+    font-size: 40pt;
+    /*background: #3498db;*/
+}
+.current{
+/*text-decoration: underline;*/
+border-bottom-color:black;
+}
+/*
+.header-button{
+  height:12vh;
+  width: 30vw;
+	font-size: 2.5vh;
+  letter-spacing: .2vw;
+  background-color: #ecf0f1;
+}
+
+.header-button:active{
+  background-color: #7f8c8d;
+  color: white;
+}
+
+.header-button:focus{
+  outline: none;
+}*/
+
+.input-label{
+  text-align: right;
+}
+
+
+.chart{
+	width: auto;
+	height: 80vh;
+	background-color: gray;
+}
+
+
+
+.select-meal {
+	width: auto;
+}
+
+.select-meal button{
+	height: 10vh;
+	font-size: 2.5vh;
+}
+
+#breakfast{
+	background-color: red;
+}
+
+#lunch{
+	background-color: blue;
+}
+
+#dinner{
+	background-color: green;
+}
+
+
+.chart-inner {
+	height: 90vh;
+}
+
+.graph {
+	height: 80vh;
+}
+
+#bsGraph {
+	width: auto;
+	height: 100%;
+}
